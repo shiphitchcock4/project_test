@@ -25,7 +25,7 @@ integrations:
   
   notifications: 
 
-    - integrationName: shiphit4-webhook
+    - integrationName: ship-issuecreation
       type: webhook
       payload:
         - title=Failure - $REPO_FULL_NAME - $BUILD_NUMBER
