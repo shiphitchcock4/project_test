@@ -15,7 +15,7 @@ env:
 
 build:
   ci:
-    
+    - thyff
     - echo $PROJECT_ID
  # - JSON='{"projectId":"$PROJECT_ID","branchName":"master","type":"push"}'
  # - 'curl -H "Authorization: apiToken $SHIP_TOKEN" -H "Content-Type: application/json" -d "{\"projectId\": \"$PROJECT_ID\"}" https://apibeta.shippable.com/projects/$PROJECT_ID/newBuild'
@@ -32,7 +32,7 @@ integrations:
         - title=Failure - $REPO_FULL_NAME - $BUILD_NUMBER
         - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) failed for $COMPARE_URL
         
-     # on_failure: always
+      on_failure: always
       #on_start: always
       on_success: never       
      
