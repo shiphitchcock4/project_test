@@ -33,7 +33,7 @@ integrations:
         - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) failed for $COMPARE_URL
         
       on_failure: change
-      #on_start: always 
+      on_start: always 
       on_success: always 
       
     - integrationName: ship-issuecreation1
